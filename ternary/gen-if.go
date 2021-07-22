@@ -2,7 +2,7 @@
 // Any changes will be lost if this file is regenerated.
 // see https://github.com/cheekybits/genny
 
-package functional
+package ternary
 
 // IfString是三目运算
 // 例如，期望判断a,b的大小，a>=b的时候返回a，否则返回b

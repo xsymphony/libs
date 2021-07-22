@@ -2,7 +2,7 @@ package compare
 
 import "github.com/cheekybits/genny/generic"
 
-type Template generic.Type
+type Template generic.Number
 
 //go:generate genny -in=$GOFILE -out=gen-$GOFILE gen "Template=int,int64,int32,float64,float32"
 func MaxTemplate(arg Template, others ...Template) Template {

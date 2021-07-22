@@ -1,4 +1,4 @@
-package functional
+package ternary
 
 import "github.com/cheekybits/genny/generic"
 

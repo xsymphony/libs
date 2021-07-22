@@ -1,4 +1,4 @@
-module libs
+module github.com/xsymphony/libs   
 
 go 1.16
 
