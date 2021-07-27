@@ -1,13 +1,9 @@
-package collection_test
+package template
 
-import (
-	"testing"
-
-	"github.com/xsymphony/libs/collection"
-)
+import "testing"
 
 func TestSet(t *testing.T) {
-	c := collection.NewSetTemplate(1, 2, 3)
+	c := NewSetTemplate(1, 2, 3)
 
 	s := c.Copy()
 	s.Add(4)
@@ -28,7 +24,7 @@ func TestSet(t *testing.T) {
 		t.Fatal("list not equal set")
 	}
 
-	another := collection.NewSetTemplate(2, 3, 4)
+	another := NewSetTemplate(2, 3, 4)
 	union := c.Union(another)
 	if union.Length() != 4 {
 		t.Fatal("length not equal 6")
